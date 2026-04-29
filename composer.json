@@ -1,0 +1,26 @@
+{
+    "name": "renocms/filters-adapter",
+    "description": "Filters adapter for Reno CMS ",
+    "authors": [
+        {
+            "name": "Reno CMS Team",
+            "email": "contacts@renocms.ru"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "renocms/filters": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reno\\FiltersAdapter\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reno\\FiltersAdapter\\FiltersAdapterServiceProvider"
+            ]
+        }
+    }
+}
